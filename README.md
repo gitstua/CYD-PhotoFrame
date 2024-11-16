@@ -26,7 +26,7 @@ This project is designed for the **Cheap Yellow Display (CYD)** ESP32 board, fea
 - GPIO pins
 
 You can purchase this board on:
-- [Amazon](https://amzn.to/3UVQwrV) (under $20)
+- [Amazon](https://amzn.to/3UVQwrV) (under $20) *(right-click to open in a new tab)*
 - [AliExpress](#) (under $13, 2-week shipping)
 
 ---
