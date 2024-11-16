@@ -10,7 +10,7 @@ A feature-rich photo frame project powered by the ESP32 microcontroller with a b
 - **Audio Playback**: Supports `.wav` and `.mp3` files, played from an SD card.
 - **Slideshow**: Automatically cycles through images stored on the SD card.
 - **WiFi Configuration**: Easily connect to WiFi using a built-in WiFiManager interface.
-- **OTA Updates**: Update the firmware wirelessly using ElegantOTA.
+- ~~**OTA Updates**: Update the firmware wirelessly using ElegantOTA.~~ (not yet implemented)
 - **Web Interface**: Upload and manage photos directly through the web.
 - **Customizable Interface**: Use QR codes and vanity screens to guide and inform users.
 - **Compact Design**: Built for the "Cheap Yellow Display" (CYD) board, a cost-effective solution under $20.
