@@ -4,7 +4,7 @@
   "builds": [
     {
       "chipFamily": "ESP32",
-      "improv": false,
+      "improv": true,
       "parts": [
         {
           "path": "firmware2.bin",
