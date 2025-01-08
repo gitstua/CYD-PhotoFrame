@@ -1334,7 +1334,7 @@ void setup() {
 
   // Title starts higher up
   tft.setCursor(20, 0); 
-  tft.println("CYD PhotoFrame 2.0 ");
+  tft.println("CYD PhotoFrame! ");
 
   tft.setTextColor(TFT_WHITE);
   tft.setTextSize(2);
