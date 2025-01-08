@@ -130,7 +130,7 @@ int JPEGDraw(JPEGDRAW *pDraw) {
 
 void *myOpen(const char *filename, int32_t *size) {
   jpgFile = sd.open(filename);
-  *size = jpgFile.size();
+  *size = jpgFile.fileSize();
   return &jpgFile;
 }
 
@@ -143,7 +143,7 @@ int32_t myRead(JPEGFILE *handle, uint8_t *buffer, int32_t length) {
 }
 
 int32_t mySeek(JPEGFILE *handle, int32_t position) {
-  return jpgFile.seek(position);
+  return jpgFile.seekSet(position);  // Use seekSet instead of seek
 }
 
 // Stop the slideshow by releasing the resources and stopping the decoder
@@ -173,7 +173,7 @@ void loadImage(uint16_t targetIndex) {
   SdBaseFile entry;
   char name[100];
   while (entry.openNext(&root)) {
-    if (!entry.isDirectory()) {
+    if (!entry.isDir()) {  // Use isDir instead of isDirectory
       entry.getName(name, sizeof(name));
       if (strcasecmp(name + strlen(name) - 3, "JPG") == 0) {
         if (index == targetIndex) {
@@ -1334,7 +1334,7 @@ void setup() {
 
   // Title starts higher up
   tft.setCursor(20, 0); 
-  tft.println("CYD PhotoFrame ");
+  tft.println("CYD PhotoFrame 2.0 ");
 
   tft.setTextColor(TFT_WHITE);
   tft.setTextSize(2);

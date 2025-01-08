@@ -1,0 +1,18 @@
+{
+    "name": "CYD PhotoFrame Development",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "visualstudioexptteam.vscodeintellicode"
+            ]
+        }
+    },
+    "forwardPorts": [8000],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "vscode"
+}
